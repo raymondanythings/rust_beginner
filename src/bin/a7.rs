@@ -10,4 +10,20 @@
 // * Use a match expression to determine which color
 //   name to print
 
-fn main() {}
+enum Colors {
+    Red,
+    Blue,
+    Yellow = 3,
+}
+
+fn get_color(color: Colors) -> i32 {
+    match color {
+        Colors::Red => 1,
+        Colors::Blue => 2,
+        Colors::Yellow => 3,
+    }
+}
+fn main() {
+    let color = get_color(Colors::Blue);
+    println!("{:?}", color);
+}
