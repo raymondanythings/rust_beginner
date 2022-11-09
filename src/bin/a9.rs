@@ -10,7 +10,7 @@
 // * Use an if..else if..else block to determine what to print
 
 fn coordinate() -> (i32, i32) {
-    (1, 5)
+    (1, 10)
 }
 
 fn main() {
